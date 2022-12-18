@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(90deg, #bc93c2f6, #5379b2);
+}
+
+.col {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+p {
+    font-style: oblique;
+}
+
+button {
+    display: inline-block;
+    border: 1px solid #070707;
+	border-radius: 25px;
+	height: 30px;
+	font-size: 15px;
+	font-weight: 500;
+	color: rgb(9, 9, 9);
+	background: linear-gradient(90deg, #b9a2bca6, #788eafaf);
+	position: relative;
+    margin-left: 32px;
+    margin-right: 32px;
+}
