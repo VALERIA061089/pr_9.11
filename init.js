@@ -1,6 +1,5 @@
 
-window.onload = function()
-{
+document.querySelector('#resultGenerate').addEventListener('click', () => {
     const initPerson = personGenerator.getPerson();
     document.querySelector('#firstNameOutput').innerText = initPerson.firstName;
     document.querySelector('#surnameOutput').innerText = initPerson.surname;
@@ -11,12 +10,6 @@ window.onload = function()
     document.querySelector('#professiyaOutput').innerText = initPerson.professiya;
     document.querySelector('#zpt1').innerText = ',';
     document.querySelector('#zpt2').innerText = ',';
-};
-
-document.querySelector('#resultGenerate').addEventListener('click', (event) => {
-    event.preventDefault();
-    location.reload();
-    
 });
 
 document.querySelector('#resultReset').addEventListener('click', () => {
