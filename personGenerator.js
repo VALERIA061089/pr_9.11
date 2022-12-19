@@ -30,29 +30,12 @@ const personGenerator = {
             "id_2": "Максим",
             "id_3": "Иван",
             "id_4": "Артем",
-            "id_5": "Дмитрий",
-            "id_6": "Никита",
-            "id_7": "Михаил",
+            "id_5": "Олег",
+            "id_6": "Владлен",
+            "id_7": "Глеб",
             "id_8": "Даниил",
             "id_9": "Давид",
-            "id_10": "Андрей"
-        }
-    }`,
-
-    //Мужские отчества
-    secondNameMaleJson: `{
-        "count": 10,
-        "list": {     
-            "id_1": "Алексеевич",
-            "id_2": "Сергеевич",
-            "id_3": "Петрович",
-            "id_4": "Викторович",
-            "id_5": "Владимирович",
-            "id_6": "Олегович",
-            "id_7": "Леонидович",
-            "id_8": "Тимофеевич",
-            "id_9": "Павлович",
-            "id_10": "Николаевич"
+            "id_10": "Денис"
         }
     }`,
     
@@ -162,8 +145,8 @@ const personGenerator = {
      
     //Генерация отчества
     randomSecondName: function () {
-        let secondNameMale = this.randomValue(this.secondNameMaleJson);
-        let secondNameFemale = (this.randomValue(this.secondNameMaleJson).replace(`ич`, `на`));
+        let secondNameMale = this.randomValue(this.firstNameMaleJson) + `ович`;
+        let secondNameFemale = (this.randomValue(this.firstNameMaleJson) + `овна`);
         if (this.person.gender === this.GENDER_MALE) {
             console.log(secondNameMale);
             return secondNameMale;

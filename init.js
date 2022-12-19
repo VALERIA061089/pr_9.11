@@ -14,6 +14,7 @@ window.onload = function()
 };
 
 document.querySelector('#resultGenerate').addEventListener('click', (event) => {
+    event.preventDefault();
     location.reload();
     
 });
